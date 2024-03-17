@@ -6,11 +6,11 @@ import TopNavigation from './components/TopNavigation'
 function App() {
 
   return (
-    <div>
+    <div className=' w-full'>
       <TopNavigation />
-      <div className=' divider m-0 p-2'></div>
+      <div className='divider mt-0 p-2'></div>
       <div className='flex'>
-        <div className=' max-md:hidden'>
+        <div className='max-md:hidden'>
           <LeftNavigation />
         </div>
         <Display />
