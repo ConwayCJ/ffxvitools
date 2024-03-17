@@ -8,7 +8,6 @@ export default function TopNavigation() {
 
   useEffect(() => {
     setCurrentTheme(getLocalThemeFromStorage())
-    console.log(currentTheme)
   }, [currentTheme])
 
   const getLocalThemeFromStorage = () => {
@@ -47,7 +46,7 @@ export default function TopNavigation() {
           </Dropdown.Menu>
 
         </Dropdown>
-        <h2 className="normal-case font-bold ml-2 text-xl md:pl-10">FFXVI Tools</h2>
+        <Link to="/" className="normal-case font-bold ml-2 text-xl md:pl-10">FFXVI Tools</Link>
       </Navbar.Start>
 
       <Navbar.End>
