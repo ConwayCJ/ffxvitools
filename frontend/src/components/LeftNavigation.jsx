@@ -1,6 +1,5 @@
 import { Menu } from "react-daisyui"
 
-
 export default function LeftNavigation() {
 
   const MenuItem = ({ label, link }) => {
@@ -14,7 +13,7 @@ export default function LeftNavigation() {
   const NestedMenu = ({ ...args }) => {
     return (
       <Menu.Item>
-        <Menu.Details open={false} label={args.label}>
+        <Menu.Details className="" open={false} label={args.label}>
           {args.children}
         </Menu.Details>
       </Menu.Item>
@@ -22,16 +21,20 @@ export default function LeftNavigation() {
   }
 
   return (
-    <Menu className=" w-max h-full">
-      <MenuItem label='Craft Planner' />
+    <Menu className="w-max h-full px-0">
+      <MenuItem label='Craft Plan' />
       <NestedMenu label="Deep Dungeons">
+
         <MenuItem label="Bozja" />
+
         <NestedMenu label="Eureka">
           <MenuItem label="Maps" />
         </NestedMenu>
+
         <NestedMenu label="Zadnor">
           <MenuItem label="Maps" />
         </NestedMenu>
+
       </NestedMenu>
     </Menu>
   )
