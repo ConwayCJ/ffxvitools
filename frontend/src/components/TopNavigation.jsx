@@ -1,6 +1,7 @@
 import { Navbar, Link, Swap, Dropdown, Button } from "react-daisyui";
 import { useEffect, useState } from "react";
 import LeftNavigation from "./LeftNavigation";
+import { NavLink } from "react-router-dom";
 
 export default function TopNavigation() {
 
@@ -46,7 +47,7 @@ export default function TopNavigation() {
           </Dropdown.Menu>
 
         </Dropdown>
-        <Link to="/" className="normal-case font-bold ml-2 text-xl md:pl-10">FFXVI Tools</Link>
+        <NavLink to="/" className="normal-case font-bold ml-2 text-xl md:pl-10">FFXVI Tools</NavLink>
       </Navbar.Start>
 
       <Navbar.End>

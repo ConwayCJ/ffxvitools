@@ -1,7 +1,7 @@
 import { Footer } from "react-daisyui"
 export default function AppFooter() {
   return (
-    <Footer className="p-10 bg-neutral text-neutral-content">
+    <Footer className="p-10 bg-base-300 text-base-content">
       <div>
         <Footer.Title>Quick Nav</Footer.Title>
         <a className="link link-hover">Branding</a>
